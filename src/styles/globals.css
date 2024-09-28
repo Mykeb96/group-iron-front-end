@@ -1,0 +1,20 @@
+html,
+body
+{
+    height: 100dvh;
+    width: 100dvw;
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background: rgb(0,0,224);
+    background: linear-gradient(180deg, rgba(0,0,224,1) 0%, rgba(0,212,255,1) 100%); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* #__next{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+} */

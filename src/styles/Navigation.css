@@ -1,0 +1,70 @@
+#navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#links-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#links-container>* {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#title{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(255, 255, 255, 0.6),
+    0 0 15px rgba(255, 255, 255, 0.4);
+    animation: pulse 1s infinite alternate;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.link {
+    transition: 0.3s;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    border: 1px solid rgba(0,212,255,1);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.link:hover {
+    transition: 0.3s;
+    box-shadow: rgba(98, 98, 98, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
+}
+
+.cl-avatarBox {
+    width: 2.75rem;
+    height: 2.75rem;
+    /* margin-right: 25px; */
+}
+
+.page-hovered {
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    margin-bottom: 20px;
+    width: 100px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
