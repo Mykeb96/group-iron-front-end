@@ -1,0 +1,341 @@
+#auctions-page{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.546);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auctions-map{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    align-items: center;
+}
+
+
+.player-listings-container{
+    height: 400px;
+    width: 400px;
+    border: 1px solid #9F44E8;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#Auctions{
+    height: 87%;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.auctions-map::-webkit-scrollbar{
+    display: none;
+}
+
+.player-listings-header{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.player-listings-header>span{
+    color: white;
+    font-size: 25px;
+}
+
+.columns-labels{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.columns-labels>span{
+    color: white;
+}
+
+.player-listings{
+    height: 310px;
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.546);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.player-listings::-webkit-scrollbar{
+    display: none;
+}
+
+.listing{
+    transition: 0.3s;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #9F44E8;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin-top: 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.listing:hover{
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.399);
+}
+
+.listing>*{
+    width: 60px;
+}
+
+.listing>span{
+    color: white;
+}
+
+.listing-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bid-input{
+    text-align: center;
+    border: 2px solid #9F44E8;
+    border-radius: 8px;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    color: #9F44E8;
+    outline: none;
+    padding-left: 15px;
+}
+
+.modal-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.923);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9F44E8;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.listing-details-label{
+    border-bottom: 1px solid #9F44E8;
+    width: 350px;
+    color: #9F44E8 !important;
+    font-weight: bold;
+    font-size: 50px !important;
+    text-transform: uppercase;
+}
+
+.listing-details>*{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.listing-detail-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.listing-detail-container>span{
+    color: white;
+    font-size: 30px;
+}
+
+.bid-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.bid-container>button{
+    transition: 0.3s;
+    width: 150px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #9F44E8;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+    cursor: pointer;
+}
+
+.bid-container>button:hover{
+    transition: 0.3s;
+    background: limegreen;
+}
+
+.modal-close{
+    transition: 0.2s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 10px 0 0;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 1px solid #9F44E8;
+    color: #9F44E8;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal-close:hover{
+    transition: 0.2s;
+    border: 1px solid red;
+    color: red;
+}
+
+.listing-detail{
+    margin-top: 15px;
+}
+
+.create-bid-title{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+
+.create-bid-label{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.create-bid-input{
+    text-align: center;
+    border: 2px solid #9F44E8;
+    border-radius: 8px;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    color: #9F44E8;
+    outline: none;
+}
+
+.create-bid-container{
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid #9F44E8;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.546);
+}
+
+.create-bid-container>button{
+    transition: 0.3s;
+    width: 150px;
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #9F44E8;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+    cursor: pointer;
+}
+
+.create-bid-container>button:hover{
+    transition: 0.3s;
+    background: limegreen;
+}
+
+.item-search{
+    transition: 0.3s;
+    width: 80px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #9F44E8;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+    cursor: pointer;
+}
+
+.item-search:hover{
+    transition: 0.3s;
+    background: limegreen;
+}
+
+@media(max-width: 1603px){
+    .player-listings-container{
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 805px){
+    .player-listings-container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

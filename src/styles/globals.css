@@ -1,20 +1,18 @@
 html,
-body
+body,
+#__next,
+#App
 {
     height: 100dvh;
     width: 100dvw;
-    border: 1px solid red;
     margin: 0;
     padding: 0;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
     overflow: hidden;
-    /* background: rgb(0,0,224);
-    background: linear-gradient(180deg, rgba(0,0,224,1) 0%, rgba(0,212,255,1) 100%); */
+    background-image: url('../Assets/images/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: 100%;
 }
 
-/* #__next{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-} */
